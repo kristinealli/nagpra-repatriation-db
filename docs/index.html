@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A portfolio demonstration of a NAGPRA repatriation workflow database, Python application, and Supabase-powered web explorer." />
+  <title>NAGPRA Repatriation Database & Workflow Explorer</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="NAGPRA Repatriation Database home">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span>Repatriation Workflow Explorer</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#why">Why</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#explorer">Explorer</a>
+        <a href="#architecture">Architecture</a>
+        <a id="repo-link" class="button button-small" href="https://github.com/kristinealli/nagpra-repatriation-db" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow">Portfolio project · database + application engineering</p>
+          <h1>Modeling the information behind a complex repatriation workflow.</h1>
+          <p class="hero-copy">The Native American Graves Protection and Repatriation Act (NAGPRA) creates a process for returning Native American human remains and cultural items to lineal descendants, Tribes, and Native Hawaiian organizations. This project explores how a relational information system can connect the records involved in inventory, affiliation, consultation, formal requests, and transfer.</p>
+          <div class="hero-actions">
+            <a class="button" href="#why">Why I built it</a>
+            <a class="text-link" href="#explorer">Explore demo records →</a>
+          </div>
+        </div>
+        <aside class="notice-card" aria-label="Portfolio and data protection notice">
+          <span class="notice-icon" aria-hidden="true">◎</span>
+          <div>
+            <strong>Educational portfolio demonstration</strong>
+            <p>This is not an official NAGPRA system. The public interface uses demonstration data and intentionally excludes sensitive operational fields such as exact site coordinates, contact information, storage locations, tracking data, and restricted notes.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="metrics-section" aria-label="Project metrics">
+      <div class="shell metrics" id="metrics">
+        <article><span class="metric-value" id="metric-total">—</span><span class="metric-label">Public demo records</span></article>
+        <article><span class="metric-value" id="metric-human">—</span><span class="metric-label">Human remains records</span></article>
+        <article><span class="metric-value" id="metric-affiliated">—</span><span class="metric-label">Records with affiliation</span></article>
+        <article><span class="metric-value">12</span><span class="metric-label">Relational tables</span></article>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="shell">
+        <div class="why-layout">
+          <div class="section-heading sticky-heading">
+            <p class="eyebrow">Why this project</p>
+            <h2>Repatriation depends on connected information.</h2>
+            <p>A repatriation case is not a single record. The process can involve an item or ancestor, the institution holding it, one or more communities, provenance and site information, affiliation evidence, consultations, requests, legal status, and transfer history.</p>
+          </div>
+          <div class="why-copy">
+            <p class="lead-copy">I built this project to explore how database design can make those relationships easier to organize and follow without reducing a culturally significant process to a simple inventory list.</p>
+            <div class="purpose-grid">
+              <article class="purpose-card">
+                <span class="card-kicker">01 · Connect</span>
+                <h3>Bring related records together</h3>
+                <p>The schema links communities, institutions, contacts, cultural items, remains profiles, discovery sites, holdings, affiliations, consultations, repatriation requests, and transfers.</p>
+              </article>
+              <article class="purpose-card">
+                <span class="card-kicker">02 · Follow</span>
+                <h3>Represent the workflow, not just the objects</h3>
+                <p>SQL views surface practical checkpoints such as human-remains inventory, open consultations, affiliation backlog, pending requests, pending transfers, and completed transfers.</p>
+              </article>
+              <article class="purpose-card">
+                <span class="card-kicker">03 · Protect</span>
+                <h3>Treat sensitivity as a design requirement</h3>
+                <p>The data model includes restricted-site flags and sensitive-note fields. The public portfolio layer exposes only a deliberately limited projection rather than the operational schema.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="workflow">
+      <div class="shell">
+        <div class="section-heading section-heading-light">
+          <p class="eyebrow eyebrow-light">Workflow context</p>
+          <h2>From inventory to return.</h2>
+          <p>The database was organized around the major stages described in the NAGPRA repatriation process. The goal was to make related records and status checkpoints easier to retrieve as a case moves forward.</p>
+        </div>
+        <div class="workflow-track" aria-label="Simplified NAGPRA workflow">
+          <article><span>01</span><h3>Inventory</h3><p>Identify and document human remains and cultural items held by an institution.</p></article>
+          <article><span>02</span><h3>Consultation</h3><p>Identify relevant parties, begin consultation, and record ongoing communication and status.</p></article>
+          <article><span>03</span><h3>Identification</h3><p>Connect items to provenance, site information, and potential or determined affiliations.</p></article>
+          <article><span>04</span><h3>Inventory completion</h3><p>Track inventory milestones and the records needed for required notices and review.</p></article>
+          <article><span>05</span><h3>Request</h3><p>Record formal repatriation requests, requesting communities, dates, and decisions.</p></article>
+          <article><span>06</span><h3>Transfer</h3><p>Track approved returns through scheduling, completion, receiving parties, and transfer history.</p></article>
+        </div>
+        <p class="workflow-note">This visualization is a simplified project-oriented view of the workflow, not legal guidance.</p>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="model">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">What the database tracks</p>
+          <h2>A relational model built around people, provenance, custody, and process.</h2>
+        </div>
+        <div class="domain-grid">
+          <article class="domain-card">
+            <div class="domain-icon" aria-hidden="true">P</div>
+            <h3>People & organizations</h3>
+            <p><strong>Community</strong>, <strong>Institution</strong>, and <strong>Contact</strong> records connect Tribes/NHOs, museums or agencies, and the people participating in the work.</p>
+          </article>
+          <article class="domain-card">
+            <div class="domain-icon" aria-hidden="true">C</div>
+            <h3>Catalog & provenance</h3>
+            <p><strong>CulturalItem</strong>, <strong>RemainsProfile</strong>, <strong>DiscoverySite</strong>, and <strong>ItemSite</strong> represent what is being tracked and where it may have originated.</p>
+          </article>
+          <article class="domain-card">
+            <div class="domain-icon" aria-hidden="true">H</div>
+            <h3>Custody & affiliation</h3>
+            <p><strong>Holding</strong> records capture possession/control over time, while <strong>Affiliation</strong> connects an item to a lineal descendant or community determination.</p>
+          </article>
+          <article class="domain-card">
+            <div class="domain-icon" aria-hidden="true">R</div>
+            <h3>Repatriation workflow</h3>
+            <p><strong>Consultation</strong>, <strong>RepatriationRequest</strong>, and <strong>Transfer</strong> represent the case workflow from engagement through return.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="explorer">
+      <div class="shell">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Interactive demo</p>
+            <h2>Repatriation item explorer</h2>
+            <p>Search and filter a safe subset of the project data. When Supabase is configured, this table reads from the live portfolio dataset; otherwise it uses the bundled demonstration snapshot.</p>
+          </div>
+          <div class="connection-status" id="connection-status" role="status"><span class="status-dot"></span><span>Loading data…</span></div>
+        </div>
+
+        <div class="filter-panel">
+          <label class="search-field">
+            <span>Search records</span>
+            <input id="search" type="search" placeholder="Title, community, institution, or ID" autocomplete="off" />
+          </label>
+          <label>
+            <span>Category</span>
+            <select id="category-filter"><option value="">All categories</option></select>
+          </label>
+          <label>
+            <span>Institution</span>
+            <select id="institution-filter"><option value="">All institutions</option></select>
+          </label>
+          <label>
+            <span>Affiliation</span>
+            <select id="affiliation-filter">
+              <option value="">All records</option>
+              <option value="affiliated">Affiliated</option>
+              <option value="unaffiliated">Unaffiliated</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="results-meta"><strong id="result-count">0 records</strong><button id="clear-filters" class="link-button" type="button">Clear filters</button></div>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Category</th><th>Institution</th><th>Community / affiliation</th><th>Holding since</th></tr></thead>
+            <tbody id="records-body"></tbody>
+          </table>
+        </div>
+        <div id="empty-state" class="empty-state" hidden>No records match those filters.</div>
+        <p class="demo-note"><strong>About the data:</strong> records shown here are for portfolio demonstration. The original data model contains additional fields that are intentionally omitted from the public view.</p>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="architecture">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">System design</p>
+          <h2>From coursework database to deployed portfolio application.</h2>
+          <p>The repository preserves the original database and Python work while adding a PostgreSQL/Supabase deployment layer and a browser-based public interface.</p>
+        </div>
+        <div class="architecture-grid">
+          <article class="architecture-card"><span class="step">01</span><h3>Relational model</h3><p>Communities, institutions, contacts, cultural items, remains profiles, sites, holdings, affiliations, consultations, requests, and transfers.</p><div class="tags"><span>PostgreSQL</span><span>12 tables</span><span>FK constraints</span></div></article>
+          <article class="architecture-card"><span class="step">02</span><h3>Workflow layer</h3><p>Views support inventory scope, hazards, consultation status, affiliations, backlog, pending requests, pending transfers, and completed transfers.</p><div class="tags"><span>SQL views</span><span>8 workflows</span><span>Reporting</span></div></article>
+          <article class="architecture-card"><span class="step">03</span><h3>Secure public projection</h3><p>A separate sanitized table is exposed to the portfolio UI. Core operational tables remain inaccessible to anonymous browser clients.</p><div class="tags"><span>RLS</span><span>Least privilege</span><span>Supabase</span></div></article>
+          <article class="architecture-card"><span class="step">04</span><h3>Static web client</h3><p>GitHub Pages serves a responsive HTML/CSS/JavaScript interface that reads public demo records through Supabase's Data API.</p><div class="tags"><span>GitHub Pages</span><span>JavaScript</span><span>Data API</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="evolution">
+      <div class="shell evolution-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Project evolution</p>
+          <h2>One idea, developed across database and programming coursework.</h2>
+          <p>The project grew in stages rather than being rebuilt from scratch for a portfolio.</p>
+        </div>
+        <div class="timeline">
+          <article>
+            <span class="timeline-dot"></span>
+            <div><p class="timeline-label">Phase 1 · Database Management</p><h3>MySQL relational database</h3><p>Designed the schema, data dictionary, constraints, sample records, database privileges, and workflow-oriented views around the NAGPRA process.</p></div>
+          </article>
+          <article>
+            <span class="timeline-dot"></span>
+            <div><p class="timeline-label">Phase 2 · Programming</p><h3>Python / Flet desktop application</h3><p>Built a lightweight interface that loads an exported database view, browses and searches multiple fields, updates community information, and generates summary totals by community and category.</p></div>
+          </article>
+          <article>
+            <span class="timeline-dot"></span>
+            <div><p class="timeline-label">Phase 3 · Portfolio modernization</p><h3>Supabase + GitHub Pages</h3><p>Ported the database to PostgreSQL/Supabase, added production migrations and Row Level Security, and created a read-only public web experience using a sanitized portfolio projection.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="responsibility">
+      <div class="shell responsibility-grid">
+        <div>
+          <p class="eyebrow">Responsible data design</p>
+          <h2>Not every field belongs on a public website.</h2>
+        </div>
+        <div class="responsibility-copy">
+          <p>The underlying schema anticipates information that may require additional care, including site coordinates, site-sensitive notes, consultation notes, storage information, chain-of-custody records, and other operational details.</p>
+          <p>For the portfolio version, the browser receives only the fields needed to demonstrate search, filtering, relationships, and application architecture. This separation is intentional: the technical goal is to demonstrate the system without treating access to sensitive information as a feature.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="references">
+      <div class="shell references-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Project references</p>
+          <h2>Sources used while designing the coursework database.</h2>
+          <p>The original project documentation drew from federal regulations, National NAGPRA Program materials, institutional guidance, and collections-safety references.</p>
+        </div>
+        <div class="reference-links">
+          <a href="https://www.nps.gov/subjects/nagpra/compliance.htm" target="_blank" rel="noreferrer"><span>National Park Service</span><strong>NAGPRA Compliance</strong><b>↗</b></a>
+          <a href="https://www.nps.gov/subjects/nagpra/databases.htm" target="_blank" rel="noreferrer"><span>National Park Service</span><strong>NAGPRA Databases</strong><b>↗</b></a>
+          <a href="https://www.ecfr.gov/current/title-43/subtitle-A/part-10" target="_blank" rel="noreferrer"><span>e-CFR</span><strong>43 CFR Part 10</strong><b>↗</b></a>
+          <a href="https://www.federalregister.gov/documents/2023/12/13/2023-27040/native-american-graves-protection-and-repatriation-act-systematic-processes-for-disposition-or" target="_blank" rel="noreferrer"><span>Federal Register</span><strong>NAGPRA Final Rule</strong><b>↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="shell about-grid">
+        <div>
+          <p class="eyebrow">About this portfolio project</p>
+          <h2>Built by Kristine Allison Johnson.</h2>
+        </div>
+        <div class="about-copy">
+          <p>This project was originally developed at Bay Mills Community College as coursework in Database Management and later Programming. It combines relational database design, Python application development, SQL reporting, web development, cloud-hosted PostgreSQL, and access-control concepts in one evolving project.</p>
+          <p><strong>Important:</strong> this site is an educational demonstration and is not affiliated with or endorsed by the National Park Service, Bureau of Indian Affairs, Bay Mills Indian Community, or another Tribal, federal, museum, or cultural institution.</p>
+          <div class="about-actions"><a class="button" id="repo-link-bottom" href="https://github.com/kristinealli/nagpra-repatriation-db" target="_blank" rel="noreferrer">View source on GitHub ↗</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <span>Kristine Allison Johnson · Portfolio Project</span>
+      <span>NAGPRA Repatriation Database & Workflow Explorer</span>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    (() => {
+      const cfg = window.APP_CONFIG || {};
+      const bottom = document.querySelector('#repo-link-bottom');
+      if (bottom && cfg.repoUrl) bottom.href = cfg.repoUrl;
+    })();
+  </script>
+</body>
+</html>
