@@ -1,0 +1,3 @@
+# Supabase CLI / GitHub integration configuration.
+# The hosted project is linked by the Supabase GitHub integration; no secrets belong here.
+project_id = "nagpra-repatriation-db"
