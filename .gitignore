@@ -1,0 +1,21 @@
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets / local environment
+.env
+.env.*
+*.pem
+*.key
+
+# Supabase CLI local state
+.supabase/
+
+# Never add service-role/secret keys to this repository.

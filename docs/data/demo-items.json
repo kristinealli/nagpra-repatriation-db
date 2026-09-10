@@ -1,0 +1,322 @@
+[
+  {
+    "item_id": 4001,
+    "item_title": "Ceremonial rattle",
+    "category": "sacred_object",
+    "institution_name": "Great Lakes University Museum",
+    "communities": "Sault Ste. Marie Tribe of Chippewa Indians",
+    "holding_since": "2022-04-01"
+  },
+  {
+    "item_id": 5001,
+    "item_title": "Ceremonial staff",
+    "category": "object_of_cultural_patrimony",
+    "institution_name": "Great Lakes University Museum",
+    "communities": "Little Traverse Bay Bands of Odawa Indians",
+    "holding_since": "2022-01-15"
+  },
+  {
+    "item_id": 2001,
+    "item_title": "Copper beads",
+    "category": "associated_funerary_object",
+    "institution_name": "Great Lakes University Museum",
+    "communities": "Grand Valley State University Museum",
+    "holding_since": "1999-04-04"
+  },
+  {
+    "item_id": 2006,
+    "item_title": "Copper bracelet",
+    "category": "associated_funerary_object",
+    "institution_name": "Great Lakes University Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2015-03-03"
+  },
+  {
+    "item_id": 3001,
+    "item_title": "Copper pendant",
+    "category": "unassociated_funerary_object",
+    "institution_name": "Great Lakes University Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2020-01-01"
+  },
+  {
+    "item_id": 3006,
+    "item_title": "Copper tinklers",
+    "category": "unassociated_funerary_object",
+    "institution_name": "Great Lakes University Museum",
+    "communities": "Little Traverse Bay Bands of Odawa Indians",
+    "holding_since": "2022-01-15"
+  },
+  {
+    "item_id": 1002,
+    "item_title": "Individual B",
+    "category": "human_remains",
+    "institution_name": "Great Lakes University Museum",
+    "communities": "Little Traverse Bay Bands of Odawa Indians",
+    "holding_since": "1960-06-01"
+  },
+  {
+    "item_id": 1011,
+    "item_title": "Individual K",
+    "category": "human_remains",
+    "institution_name": "Great Lakes University Museum",
+    "communities": "Grand Traverse Band of Ottawa and Chippewa Indians",
+    "holding_since": "2015-03-03"
+  },
+  {
+    "item_id": 4002,
+    "item_title": "Prayer bundle",
+    "category": "sacred_object",
+    "institution_name": "Great Lakes University Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2023-05-10"
+  },
+  {
+    "item_id": 4005,
+    "item_title": "Feather fan",
+    "category": "sacred_object",
+    "institution_name": "Islands Research Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2021-04-04"
+  },
+  {
+    "item_id": 1008,
+    "item_title": "Individual H",
+    "category": "human_remains",
+    "institution_name": "Islands Research Museum",
+    "communities": "Hui Mālama I Nā Kūpuna",
+    "holding_since": "2005-05-05"
+  },
+  {
+    "item_id": 2009,
+    "item_title": "Bead cache",
+    "category": "associated_funerary_object",
+    "institution_name": "National Park Service - Lakes Region",
+    "communities": "Unaffiliated",
+    "holding_since": "2018-08-08"
+  },
+  {
+    "item_id": 5004,
+    "item_title": "Council wampum strand",
+    "category": "object_of_cultural_patrimony",
+    "institution_name": "National Park Service - Lakes Region",
+    "communities": "Grand Traverse Band of Ottawa and Chippewa Indians",
+    "holding_since": "2022-04-18"
+  },
+  {
+    "item_id": 3004,
+    "item_title": "Glass bead string",
+    "category": "unassociated_funerary_object",
+    "institution_name": "National Park Service - Lakes Region",
+    "communities": "Keweenaw Bay Indian Community",
+    "holding_since": "2021-03-03"
+  },
+  {
+    "item_id": 1005,
+    "item_title": "Individual E",
+    "category": "human_remains",
+    "institution_name": "National Park Service - Lakes Region",
+    "communities": "Unaffiliated",
+    "holding_since": "1990-01-08"
+  },
+  {
+    "item_id": 1009,
+    "item_title": "Individual I",
+    "category": "human_remains",
+    "institution_name": "National Park Service - Lakes Region",
+    "communities": "Unaffiliated",
+    "holding_since": "2010-08-12"
+  },
+  {
+    "item_id": 4004,
+    "item_title": "Pipe stem",
+    "category": "sacred_object",
+    "institution_name": "National Park Service - Lakes Region",
+    "communities": "Unaffiliated",
+    "holding_since": "2022-09-09"
+  },
+  {
+    "item_id": 2004,
+    "item_title": "Red ochre packet",
+    "category": "associated_funerary_object",
+    "institution_name": "National Park Service - Lakes Region",
+    "communities": "Unaffiliated",
+    "holding_since": "2010-08-12"
+  },
+  {
+    "item_id": 2002,
+    "item_title": "Ceramic vessel A",
+    "category": "associated_funerary_object",
+    "institution_name": "Northern State Historical Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2000-07-07"
+  },
+  {
+    "item_id": 3002,
+    "item_title": "Ceramic vessel C",
+    "category": "unassociated_funerary_object",
+    "institution_name": "Northern State Historical Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2020-05-05"
+  },
+  {
+    "item_id": 5002,
+    "item_title": "Clan medallion",
+    "category": "object_of_cultural_patrimony",
+    "institution_name": "Northern State Historical Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2022-02-20"
+  },
+  {
+    "item_id": 1001,
+    "item_title": "Individual A",
+    "category": "human_remains",
+    "institution_name": "Northern State Historical Museum",
+    "communities": "Sault Ste. Marie Tribe of Chippewa Indians",
+    "holding_since": "2000-01-01"
+  },
+  {
+    "item_id": 1003,
+    "item_title": "Individual C",
+    "category": "human_remains",
+    "institution_name": "Northern State Historical Museum",
+    "communities": "Sault Ste. Marie Tribe of Chippewa Indians",
+    "holding_since": "1975-05-20"
+  },
+  {
+    "item_id": 1007,
+    "item_title": "Individual G",
+    "category": "human_remains",
+    "institution_name": "Northern State Historical Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2001-07-07"
+  },
+  {
+    "item_id": 1012,
+    "item_title": "Individual L",
+    "category": "human_remains",
+    "institution_name": "Northern State Historical Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2016-06-06"
+  },
+  {
+    "item_id": 3007,
+    "item_title": "Painted sherds",
+    "category": "unassociated_funerary_object",
+    "institution_name": "Northern State Historical Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2022-02-20"
+  },
+  {
+    "item_id": 2007,
+    "item_title": "Vessel B",
+    "category": "associated_funerary_object",
+    "institution_name": "Northern State Historical Museum",
+    "communities": "Unaffiliated",
+    "holding_since": "2016-06-06"
+  },
+  {
+    "item_id": 4003,
+    "item_title": "Drum",
+    "category": "sacred_object",
+    "institution_name": "River Valley Archaeology Center",
+    "communities": "Office of Hawaiian Affairs",
+    "holding_since": "2021-02-02"
+  },
+  {
+    "item_id": 1004,
+    "item_title": "Individual D",
+    "category": "human_remains",
+    "institution_name": "River Valley Archaeology Center",
+    "communities": "Bay Mills Indian Community",
+    "holding_since": "1981-10-10"
+  },
+  {
+    "item_id": 3008,
+    "item_title": "Polished stone",
+    "category": "unassociated_funerary_object",
+    "institution_name": "River Valley Archaeology Center",
+    "communities": "Unaffiliated",
+    "holding_since": "2022-03-25"
+  },
+  {
+    "item_id": 2003,
+    "item_title": "Shell gorget",
+    "category": "associated_funerary_object",
+    "institution_name": "River Valley Archaeology Center",
+    "communities": "Unaffiliated",
+    "holding_since": "2005-05-05"
+  },
+  {
+    "item_id": 5003,
+    "item_title": "Society regalia set",
+    "category": "object_of_cultural_patrimony",
+    "institution_name": "River Valley Archaeology Center",
+    "communities": "Unaffiliated",
+    "holding_since": "2022-03-25"
+  },
+  {
+    "item_id": 3003,
+    "item_title": "Stone blade",
+    "category": "unassociated_funerary_object",
+    "institution_name": "River Valley Archaeology Center",
+    "communities": "Unaffiliated",
+    "holding_since": "2021-02-02"
+  },
+  {
+    "item_id": 2008,
+    "item_title": "Stone pipe",
+    "category": "associated_funerary_object",
+    "institution_name": "River Valley Archaeology Center",
+    "communities": "Unaffiliated",
+    "holding_since": "2017-07-07"
+  },
+  {
+    "item_id": 2010,
+    "item_title": "Birch bark fragment",
+    "category": "associated_funerary_object",
+    "institution_name": "State Department of History",
+    "communities": "Unaffiliated",
+    "holding_since": "2019-09-09"
+  },
+  {
+    "item_id": 2005,
+    "item_title": "Bone awl",
+    "category": "associated_funerary_object",
+    "institution_name": "State Department of History",
+    "communities": "Unaffiliated",
+    "holding_since": "2012-02-02"
+  },
+  {
+    "item_id": 5005,
+    "item_title": "Ceremonial sash",
+    "category": "object_of_cultural_patrimony",
+    "institution_name": "State Department of History",
+    "communities": "Unaffiliated",
+    "holding_since": "2022-05-30"
+  },
+  {
+    "item_id": 1010,
+    "item_title": "Individual J",
+    "category": "human_remains",
+    "institution_name": "State Department of History",
+    "communities": "Unaffiliated",
+    "holding_since": "2012-02-02"
+  },
+  {
+    "item_id": 3005,
+    "item_title": "Shell beads",
+    "category": "unassociated_funerary_object",
+    "institution_name": "State Department of History",
+    "communities": "Unaffiliated",
+    "holding_since": "2021-04-04"
+  },
+  {
+    "item_id": 1006,
+    "item_title": "Individual F",
+    "category": "human_remains",
+    "institution_name": "Upper Peninsula University",
+    "communities": "Unaffiliated",
+    "holding_since": "1999-04-04"
+  }
+]

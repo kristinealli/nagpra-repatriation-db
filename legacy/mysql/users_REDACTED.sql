@@ -1,0 +1,16 @@
+-- SECURITY NOTE
+-- The original coursework file defined local MySQL users with hard-coded passwords.
+-- Those credentials are intentionally NOT included in this public GitHub package.
+--
+-- Supabase access is handled with Postgres grants + Row Level Security (RLS).
+-- See ../../supabase/03_security.sql.
+--
+-- Original role intent (for documentation only):
+--   SuperAdmin  -> full administrative access
+--   Clerk       -> read/update/schema maintenance
+--   CISUser     -> select/insert/delete
+--   Views       -> read-only
+--   DBUserAdmin -> database/user administration
+--   Student01   -> limited read/view access
+--
+-- Do not recreate application passwords in a committed SQL file.

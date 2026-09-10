@@ -1,0 +1,19 @@
+Total items: 40
+
+By Community:
+  - Bay Mills Indian Community: 1
+  - Grand Traverse Band of Ottawa and Chippewa Indians: 2
+  - Grand Valley State University Museum: 1
+  - Hui Mālama I Nā Kūpuna: 1
+  - Keweenaw Bay Indian Community: 1
+  - Little Traverse Bay Bands of Odawa Indians: 3
+  - Office of Hawaiian Affairs: 1
+  - Sault Ste. Marie Tribe of Chippewa Indians: 3
+  - Unaffiliated: 27
+
+By Category:
+  - associated_funerary_object: 10
+  - human_remains: 12
+  - object_of_cultural_patrimony: 5
+  - sacred_object: 5
+  - unassociated_funerary_object: 8
