@@ -20,6 +20,7 @@ STATUS_STYLE = {
     "pending":   {"foreground": "blue"},
 }
 
+
 def load_data(filepath):
     """Read in data from a CSV file (requirement: read from file)."""
     rows = []
@@ -77,7 +78,7 @@ def apply_filters():
     populate_table(filtered)
     stats = compute_stats(filtered)
     stats_var.set(f"Total: {stats['total']} | Repatriated: {stats['repatriated']} "
-                f"({stats['pct']:.1f}%) | Avg days: {stats['avg_days'] or '-'}")
+                  f"({stats['pct']:.1f}%) | Avg days: {stats['avg_days'] or '-'}")
 
 
 def populate_table(rows):
@@ -153,9 +154,9 @@ def open_file():
     ROWS = load_data(path)
     # Populate filter dropdowns
     communities = sorted({r.get("community", "")
-                        for r in ROWS if r.get("community")})
+                          for r in ROWS if r.get("community")})
     institutions = sorted({r.get("holding_institution", "")
-                        for r in ROWS if r.get("holding_institution")})
+                           for r in ROWS if r.get("holding_institution")})
     community_combo["values"] = [""] + communities
     institution_combo["values"] = [""] + institutions
     apply_filters()
@@ -176,7 +177,7 @@ search_var = tk.StringVar()
 ttk.Label(top, text="Search Title").pack(side="left", padx=(8, 2))
 ttk.Entry(top, textvariable=search_var, width=30).pack(side="left")
 ttk.Button(top, text="Apply Filters",
-        command=apply_filters).pack(side="left", padx=6)
+           command=apply_filters).pack(side="left", padx=6)
 
 community_var = tk.StringVar()
 institution_var = tk.StringVar()
@@ -213,12 +214,12 @@ stats_var = tk.StringVar(value="Load a CSV to begin.")
 ttk.Label(bottom, textvariable=stats_var).pack(side="left")
 
 ttk.Button(bottom, text="Export Results",
-        command=export_results).pack(side="right")
+           command=export_results).pack(side="right")
 
 note_var = tk.StringVar()
 ttk.Entry(bottom, textvariable=note_var, width=40).pack(
     side="right", padx=(0, 6))
 ttk.Button(bottom, text="Add Note to Selected",
-        command=add_note).pack(side="right", padx=(0, 6))
+           command=add_note).pack(side="right", padx=(0, 6))
 
 root.mainloop()
