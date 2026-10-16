@@ -10,9 +10,6 @@
     clear: document.querySelector('#clear-filters'),
     empty: document.querySelector('#empty-state'),
     status: document.querySelector('#connection-status'),
-    total: document.querySelector('#metric-total'),
-    human: document.querySelector('#metric-human'),
-    affiliated: document.querySelector('#metric-affiliated'),
     repo: document.querySelector('#repo-link')
   };
 
@@ -105,7 +102,6 @@
 
   function initialize() {
     populateFilters();
-    updateMetrics();
     applyFilters();
   }
 
@@ -114,12 +110,6 @@
     const institutions = [...new Set(state.all.map(i => i.institution_name).filter(Boolean))].sort();
     categories.forEach(v => els.category.insertAdjacentHTML('beforeend', `<option value="${escapeHtml(v)}">${escapeHtml(categoryLabel(v))}</option>`));
     institutions.forEach(v => els.institution.insertAdjacentHTML('beforeend', `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`));
-  }
-
-  function updateMetrics() {
-    els.total.textContent = state.all.length;
-    els.human.textContent = state.all.filter(i => i.category === 'human_remains').length;
-    els.affiliated.textContent = state.all.filter(isAffiliated).length;
   }
 
   function applyFilters() {
