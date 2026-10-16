@@ -46,11 +46,34 @@
     });
   }
 
+  function isPlaceholderValue(value) {
+    if (typeof value !== 'string') return true;
+    const normalized = value.trim().toLowerCase();
+    return !normalized || normalized.includes('your-project') || normalized.includes('your_') || normalized.includes('replace-me') || normalized.includes('example');
+  }
+
+  function hasValidSupabaseConfig(cfg) {
+    const supabaseUrl = typeof cfg.supabaseUrl === 'string' ? cfg.supabaseUrl.trim() : '';
+    const publishableKey = typeof cfg.supabasePublishableKey === 'string' ? cfg.supabasePublishableKey.trim() : '';
+
+    if (!supabaseUrl || !publishableKey) return false;
+    if (!/^https:\/\/[a-z0-9-]+\.supabase\.co(?:\/)?$/i.test(supabaseUrl)) return false;
+    if (isPlaceholderValue(supabaseUrl) || isPlaceholderValue(publishableKey)) return false;
+    return true;
+  }
+
+  function getFallbackErrorMessage() {
+    if (location.protocol === 'file:') {
+      return 'The demo data could not be loaded because this page is being opened from the filesystem. Serve the project with a local web server (for example: python3 -m http.server) and reload the page.';
+    }
+    return 'The demo data could not be loaded. Check the project folder and try again.';
+  }
+
   async function loadData() {
     const cfg = window.APP_CONFIG || {};
     if (cfg.repoUrl) els.repo.href = cfg.repoUrl;
 
-    if (cfg.supabaseUrl && cfg.supabasePublishableKey) {
+    if (hasValidSupabaseConfig(cfg)) {
       try {
         await loadSupabaseLibrary();
         const client = window.supabase.createClient(cfg.supabaseUrl, cfg.supabasePublishableKey);
@@ -151,6 +174,6 @@
     console.error(err);
     setStatus('Data failed to load', 'demo');
     els.empty.hidden = false;
-    els.empty.textContent = 'The demo data could not be loaded. Serve this folder through a local web server rather than opening index.html directly.';
+    els.empty.textContent = getFallbackErrorMessage();
   });
 })();
