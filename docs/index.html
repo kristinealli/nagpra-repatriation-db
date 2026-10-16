@@ -16,8 +16,46 @@
   <header class="site-header">
     <div class="shell nav-wrap">
       <a class="brand" href="#top" aria-label="NAGPRA Repatriation Database home">
-        <span class="brand-mark" aria-hidden="true">R</span>
-        <span>More Than Remains: Repatriation Database Workflow</span>
+        <span class="brand-mark" aria-hidden="true">
+          <svg class="brand-symbol" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" fill="none">
+        
+            <!-- Outer circle -->
+            <circle class="symbol-ring" cx="60" cy="60" r="39" />
+        
+            <!-- Seven connected points -->
+            <path class="symbol-outline" d="M60 21 L90.5 35.7 L98 69
+              L76.9 95.1 L43.1 95.1
+              L22 69 L29.5 35.7 Z" />
+        
+            <!-- Relationships radiating from center -->
+            <path class="symbol-connections" d="M60 60 L60 21
+              M60 60 L90.5 35.7
+              M60 60 L98 69
+              M60 60 L76.9 95.1
+              M60 60 L43.1 95.1
+              M60 60 L22 69
+              M60 60 L29.5 35.7" />
+        
+            <!-- Seven points -->
+            <g class="symbol-points">
+              <circle cx="60" cy="21" r="3.5" />
+              <circle cx="90.5" cy="35.7" r="3.5" />
+              <circle cx="98" cy="69" r="3.5" />
+              <circle cx="76.9" cy="95.1" r="3.5" />
+              <circle cx="43.1" cy="95.1" r="3.5" />
+              <circle cx="22" cy="69" r="3.5" />
+              <circle cx="29.5" cy="35.7" r="3.5" />
+            </g>
+        
+            <!-- Central connection -->
+            <circle class="symbol-center" cx="60" cy="60" r="5" />
+          </svg>
+        </span>
+
+<span class="brand-text">
+  <span class="brand-title">Repatriation Database Workflow</span>
+  <span class="brand-subtitle">Artifacts of Return</span>
+</span>
       </a>
       <nav aria-label="Primary navigation">
         <a href="#why">Why</a>
@@ -37,11 +75,13 @@
           <p class="eyebrow">Research-informed coursework · database + application engineering</p>
           <h1>More Than Remains.</h1>
           <p class="hero-copy">The Native American Graves Protection and Repatriation Act (NAGPRA) establishes a
-            framework for the return of Native American ancestors and cultural items held by museums and federal agencies
-            to lineal descendants, Tribes,and Native
-            Hawaiian organizations. Repatriation is an important part of restoring cultural connections, respecting Tribal sovereignty,
+            framework for the return of Native American ancestors and cultural items held by museums and federal
+            agencies
+            to lineal descendants, Tribes, and Native
+            Hawaiian organizations. Repatriation is an important part of restoring cultural connections, respecting
+            Tribal sovereignty,
             and addressing institutional responsibilities.</p>
-            <p class="hero-copy">
+          <p class="hero-copy">
 
             This project began with research into NAGPRA and the complex relationships among cultural items,
             institutions, Tribal
@@ -68,51 +108,87 @@
       </div>
     </section>
 
-    <section class="metrics-section" aria-label="Project metrics">
-      <div class="shell metrics" id="metrics">
-        <article><span class="metric-value" id="metric-total">—</span><span class="metric-label">Public demo
-            records</span></article>
-        <article><span class="metric-value" id="metric-human">—</span><span class="metric-label">Human remains
-            records</span></article>
-        <article><span class="metric-value" id="metric-affiliated">—</span><span class="metric-label">Records with
-            affiliation</span></article>
-        <article><span class="metric-value">12</span><span class="metric-label">Relational tables</span></article>
-      </div>
-    </section>
+<section class="metrics-section" aria-label="Project engineering metrics">
+  <div class="shell metrics" id="metrics">
+    <article>
+      <span class="metric-value">12</span>
+      <span class="metric-label">Relational tables</span>
+    </article>
+
+    <article>
+      <span class="metric-value">8</span>
+      <span class="metric-label">Database views</span>
+    </article>
+
+    <article>
+      <span class="metric-value">M:N</span>
+      <span class="metric-label">Many-to-many relationships</span>
+    </article>
+
+    <article>
+      <span class="metric-value">RBAC</span>
+      <span class="metric-label">Role-based access control</span>
+    </article>
+  </div>
+</section>
+
+
 
     <section class="section" id="why">
       <div class="shell">
         <div class="why-layout">
           <div class="section-heading sticky-heading">
             <p class="eyebrow">Why this project</p>
-            <h2>Repatriation depends on connected information.</h2>
-            <p>NAGPRA includes a process of dialogue between covered institutions and Native communities. Repatriation records can connect ancestors and cultural
-              items, institutional holdings, communities, provenance, affiliations, consultations, requests, and
-              transfers. Organizing these relationships was the starting point for this project.</p>
+            <h2>A path toward return..</h2>
+            <p>Across the United States, Native American ancestors and cultural belongings remain in museums,
+              universities, and federal
+              collections. The Native American Graves Protection and Repatriation Act (NAGPRA) establishes
+              responsibilities for
+              institutions and processes for returning ancestors and certain cultural items to their communities.
+              But repatriation involves more than identifying what an institution holds. It requires understanding
+              relationships among
+              ancestors, cultural belongings, Tribal communities, places, and institutional records. Those relationships
+              are not
+              always straightforward, and the information needed to support their return may be spread across multiple
+              sources.
+              This project began with the question: <strong color: #fffdf8;>How can technology help organize those connections while
+                respecting the cultural
+                significance of the work and the authority of the communities involved?</strong></p>
           </div>
           <div class="why-copy">
-            <p class="lead-copy">I began by researching NAGPRA and its information relationships, then used database and
-              application design to explore how those records could be organized without reducing a culturally
-              significant process to an inventory list.</p>
+            <p class="lead-copy">Behind every record is a relationship. Behind every return is a community.</p>
+            <p class="why-design-intro">The goal was to explore how better information systems could support the work of
+            bringing ancestors and cultural belongings home. I began by researching NAGPRA, the repatriation process, and the information relationships involved. That research
+            informed a relational database designed to connect cultural items and ancestors with communities, institutions,
+            locations, affiliations, and repatriation activities.</p>
+            <p>
+            The resulting database and application prototype explore how records can be organized, connected, and reviewed.</p> <p>My aim was to build technology designed in a manner that supports the process and the ones that carry out the work, not
+            replace consultation, undermind Tribal authority, or replace community decision-making.</p>
             <div class="purpose-grid">
               <article class="purpose-card">
                 <span class="card-kicker">01 · Connect</span>
-                <h3>Bring related records together</h3>
-                <p>The schema links communities, institutions, contacts, cultural items, remains profiles, discovery
-                  sites, holdings, affiliations, consultations, repatriation requests, and transfers.</p>
+                <h3>Make Relationships Visible</h3>
+                              <p>The data base connects records about ancestors, cultural belongings, communities, institutions, and places to help reveal
+                                relationships
+                                that might otherwise remain fragmented across separate sources.</p>
+                <p>This was achieved via junction tables representing many-to-many relationships between items and
+                discovery sites, linked remains profiles, institutional holdings, and affiliation records to preserve important
+                context.</p>
               </article>
               <article class="purpose-card">
-                <span class="card-kicker">02 · Follow</span>
-                <h3>Represent the workflow, not just the objects</h3>
-                <p>SQL views surface practical checkpoints such as human-remains inventory, open consultations,
-                  affiliation backlog, pending requests, pending transfers, and completed transfers.</p>
+                <span class="card-kicker">02 · Support</span>
+                <h3>Represent the process of return</h3>
+  
+                <p>The workflow is intended to represent the consultation, affiliation, custody, requests, and transfers involved in repatriation by  preserving the context needed to understand how records and responsibilities relate over time.</p>
+                <p>This was achieved by modeling the repatriation workflow through Consultation, RepatriationRequest, and Transfer records, alongside historical holdings and cultural affiliation determinations. These relationships were structured to track institutional custody,
+                document consultation and requests, and represent the progression toward return.</p>
               </article>
               <article class="purpose-card">
-                <span class="card-kicker">03 · Protect</span>
-                <h3>Treat sensitivity as a design requirement</h3>
-                <p>The model accounts for information that may need additional care. The public demonstration uses
-                  synthetic data and exposes only a deliberately limited projection, rather than the full database
-                  model.</p>
+                <span class="card-kicker">03 · Respect</span>
+                <h3>Sensitivity is a design requirement</h3>
+                <p>It is important to recognize that despite being in institutional holding, information about ancestors and cultural belongings is not ordinary inventory data.</p>
+                <p>Sensitivity was incorporated into the project via role-based database access.</p> <p>The prototype uses synthetic demonstration records and limited public-facing information, keeping sensitive data
+                considerations and Tribal authority central to the design.</p>
               </article>
             </div>
           </div>
@@ -125,39 +201,92 @@
         <div class="section-heading section-heading-light">
           <p class="eyebrow eyebrow-light">Workflow context</p>
           <h2>Tracking the Path Home</h2>
-          <p>The database was organized around selected information and workflow concepts associated with NAGPRA. It is
-            a simplified educational model, not a complete interpretation of NAGPRA. Its goal
-            is to make related records and status checkpoints easier to organize, not to replace consultation or
-            community decisions.</p>
+          <p>The National Park Service describes the following eight steps for museums and federal agencies handling
+            Native American human remains and associated funerary objects. This summary is for context; refer to the
+            current regulations and NPS guidance for the complete requirements.</p>
         </div>
-        <div class="workflow-track" aria-label="Simplified NAGPRA workflow">
+        <div class="workflow-track"
+          aria-label="Eight-step NAGPRA process for human remains and associated funerary objects">
           <article><span>01</span>
-            <h3>Inventory</h3>
-            <p>Identify and document human remains and cultural items held by an institution.</p>
+            <h3>Compile itemized list</h3>
+            <p>Identify human remains and associated funerary objects in relevant holdings or collections.</p>
           </article>
           <article><span>02</span>
-            <h3>Consultation</h3>
-            <p>Identify relevant parties, begin consultation, and record ongoing communication and status.</p>
+            <h3>Initiate consultation</h3>
+            <p>Identify consulting parties and invite them to consult as soon as possible after compiling the list.</p>
           </article>
           <article><span>03</span>
-            <h3>Identification</h3>
-            <p>Connect items to provenance, site information, and potential or determined affiliations.</p>
+            <h3>Consult on identifications</h3>
+            <p>Discuss identifications with consulting parties and document concurrence, disagreement, or nonresponse.
+            </p>
           </article>
           <article><span>04</span>
-            <h3>Inventory completion</h3>
-            <p>Track inventory milestones and the records needed for required notices and review.</p>
+            <h3>Complete inventory</h3>
+            <p>Submit the inventory, with clear determinations, to consulting parties and the National NAGPRA Program by
+              the applicable deadline.</p>
           </article>
           <article><span>05</span>
-            <h3>Request</h3>
-            <p>Record formal repatriation requests, requesting communities, dates, and decisions.</p>
+            <h3>Submit completion notice</h3>
+            <p>Submit a notice of inventory completion for publication in the Federal Register no later than six months
+              after completing the inventory.</p>
           </article>
           <article><span>06</span>
-            <h3>Transfer</h3>
-            <p>Track approved returns through scheduling, completion, receiving parties, and transfer history.</p>
+            <h3>Consider requests</h3>
+            <p>After publication, receive and consider requests from eligible lineal descendants, Tribes, or Native
+              Hawaiian organizations.</p>
+          </article>
+          <article><span>07</span>
+            <h3>Respond to requests</h3>
+            <p>Within 90 days of receiving a request, send a written response to the requestor and other identified
+              parties.</p>
+          </article>
+          <article><span>08</span>
+            <h3>Complete repatriation</h3>
+            <p>Within 90 days after responding, issue a written repatriation statement, as described in NPS guidance.
+            </p>
           </article>
         </div>
-        <p class="workflow-note">This is a simplified educational visualization, not a complete NAGPRA or CalNAGPRA
-          workflow, legal guidance, or a substitute for consultation.</p>
+        <p class="workflow-note">Deadlines and requirements depend on the applicable regulations and circumstances. This
+          overview is not legal guidance and does not replace consultation or community decisions. See the <a
+            href="https://www.nps.gov/subjects/nagpra/repatriation-of-human-remains.htm" target="_blank"
+            rel="noreferrer">National Park Service human-remains process</a> and <a
+            href="https://www.ecfr.gov/current/title-43/subtitle-A/part-10" target="_blank" rel="noreferrer">43 CFR Part
+            10</a>.</p>
+
+        <div class="workflow-views">
+          <h3>Database views that organize related records</h3>
+          <p>These views support information review; they do not complete process steps, determine eligibility, or
+            establish affiliation.</p>
+          <div class="view-catalog">
+            <article><code>vw_hr_inventory_scope</code>
+              <p>Human-remains records with current holding and selected institutional, legal-status, and storage
+                fields.</p>
+            </article>
+            <article><code>vw_hr_hazards</code>
+              <p>Items with known or noted potential hazards for handling review.</p>
+            </article>
+            <article><code>vw_hr_open_consultations</code>
+              <p>Open human-remains consultations, including status, meeting dates, and involved parties.</p>
+            </article>
+            <article><code>vw_hr_affiliations</code>
+              <p>Recorded human-remains affiliation determinations, including type, basis, date, and community.</p>
+            </article>
+            <article><code>vw_hr_unaffiliated_backlog</code>
+              <p>Human-remains records without a recorded affiliation, for follow-up review.</p>
+            </article>
+            <article><code>vw_pending_requests</code>
+              <p>Pending requests, requesting community, current holding institution, and decision status.</p>
+            </article>
+            <article><code>vw_pending_transfers</code>
+              <p>Approved requests with no completed transfer recorded and available scheduling information.</p>
+            </article>
+            <article><code>vw_completed_transfers</code>
+              <p>Completed transfer records, including parties, dates, and selected logistics.</p>
+            </article>
+          </div>
+          <p class="workflow-note">Workflow views can contain operational information. The public demo uses only the
+            separate, limited <code>portfolio_item</code> projection.</p>
+        </div>
       </div>
     </section>
 
@@ -166,31 +295,41 @@
         <div class="section-heading">
           <p class="eyebrow">What the database tracks</p>
           <h2>A relational model built around people, provenance, custody, and process.</h2>
+          <p>The coursework model organizes related records in four areas. It represents information for review; it does
+            not make affiliation determinations or carry out repatriation.</p>
         </div>
         <div class="domain-grid">
           <article class="domain-card">
-            <div class="domain-icon" aria-hidden="true">P</div>
+            <p class="domain-kicker">01 · People &amp; organizations</p>
             <h3>People & organizations</h3>
-            <p><strong>Community</strong>, <strong>Institution</strong>, and <strong>Contact</strong> records connect
-              Tribes/NHOs, museums or agencies, and the people participating in the work.</p>
+            <p><strong>Community</strong> records represent Tribes and Native Hawaiian organizations;
+              <strong>Institution</strong> records represent museums, universities, or agencies.
+              <strong>Contact</strong> records link people and roles to a community or institution.
+            </p>
           </article>
           <article class="domain-card">
-            <div class="domain-icon" aria-hidden="true">C</div>
+            <p class="domain-kicker">02 · Catalog &amp; provenance</p>
             <h3>Catalog & provenance</h3>
-            <p><strong>CulturalItem</strong>, <strong>RemainsProfile</strong>, <strong>DiscoverySite</strong>, and
-              <strong>ItemSite</strong> represent what is being tracked and where it may have originated.</p>
+            <p><strong>CulturalItem</strong> represents categories such as human remains, funerary objects, sacred
+              objects, and objects of cultural patrimony. <strong>RemainsProfile</strong> holds related details;
+              <strong>DiscoverySite</strong> and <strong>ItemSite</strong> link items to findspots or reported and
+              probable origins, including many-to-many relationships.
+            </p>
           </article>
           <article class="domain-card">
-            <div class="domain-icon" aria-hidden="true">H</div>
+            <p class="domain-kicker">03 · Custody &amp; affiliation</p>
             <h3>Custody & affiliation</h3>
-            <p><strong>Holding</strong> records capture possession/control over time, while <strong>Affiliation</strong>
-              connects an item to a lineal descendant or community determination.</p>
+            <p><strong>Holding</strong> records track possession, control, or custody over time, along with acquisition
+              and selected title or right-of-possession fields. <strong>Affiliation</strong> records store a lineal or
+              cultural determination, its basis, date, and community; the software does not make that determination.</p>
           </article>
           <article class="domain-card">
-            <div class="domain-icon" aria-hidden="true">R</div>
+            <p class="domain-kicker">04 · Repatriation workflow</p>
             <h3>Repatriation workflow</h3>
-            <p><strong>Consultation</strong>, <strong>RepatriationRequest</strong>, and <strong>Transfer</strong>
-              represent the case workflow from engagement through return.</p>
+            <p><strong>Consultation</strong> records connect a community, institution, and item.
+              <strong>RepatriationRequest</strong> records a community's formal request; <strong>Transfer</strong>
+              records selected details when an approved return is carried out.
+            </p>
           </article>
         </div>
       </div>
@@ -202,8 +341,7 @@
           <div>
             <p class="eyebrow">Interactive demo</p>
             <h2>Repatriation item explorer</h2>
-            <p>Search and filter a safe subset of the project data. When Supabase is configured, this table reads from
-              the live portfolio dataset; otherwise it uses the bundled demonstration snapshot.</p>
+            <p>Search and filter a safe subset of the project data.</p>
           </div>
           <div class="connection-status" id="connection-status" role="status"><span
               class="status-dot"></span><span>Loading data…</span></div>
@@ -359,19 +497,47 @@
         <div class="section-heading">
           <p class="eyebrow">Project references</p>
           <h2>Sources used while designing the coursework database.</h2>
-          <p>The original project documentation drew from federal regulations, National NAGPRA Program materials,
-            institutional guidance, and collections-safety references.</p>
+          <p>The Database Management coursework report documented the data dictionary and cited the materials below.
+            These references provide context for the project's educational model, not legal guidance. Access dates
+            reflect the original report.</p>
         </div>
-        <div class="reference-links">
-          <a href="https://www.nps.gov/subjects/nagpra/compliance.htm" target="_blank" rel="noreferrer"><span>National
-              Park Service</span><strong>NAGPRA Compliance</strong><b>↗</b></a>
-          <a href="https://www.nps.gov/subjects/nagpra/databases.htm" target="_blank" rel="noreferrer"><span>National
-              Park Service</span><strong>NAGPRA Databases</strong><b>↗</b></a>
-          <a href="https://www.ecfr.gov/current/title-43/subtitle-A/part-10" target="_blank"
-            rel="noreferrer"><span>e-CFR</span><strong>43 CFR Part 10</strong><b>↗</b></a>
-          <a href="https://www.federalregister.gov/documents/2023/12/13/2023-27040/native-american-graves-protection-and-repatriation-act-systematic-processes-for-disposition-or"
-            target="_blank" rel="noreferrer"><span>Federal Register</span><strong>NAGPRA Final Rule</strong><b>↗</b></a>
-        </div>
+        <ol class="reference-citations">
+          <li>“Chapter 24: Collections-Based Hazards.” <em>Smithsonian Institution Safety Manual</em>, Office of Safety,
+            Health, and Environmental Management (OSHEM), Smithsonian Institution, 9 June 2011. PDF. Accessed 19 Aug.
+            2025.</li>
+          <li>“<a href="https://www.nps.gov/subjects/nagpra/compliance.htm" target="_blank"
+              rel="noreferrer">Compliance</a>.” <em>Native American Graves Protection and Repatriation Act</em>,
+            National NAGPRA Program, National Park Service, U.S. Department of the Interior, updated 4 Oct. 2024. Web.
+            Accessed 19 Aug. 2025.</li>
+          <li>“Consultation.” <em>Consultation + Repatriation Process</em>, UC Santa Barbara NAGPRA, University of
+            California, Santa Barbara, updated 2025. Web. Accessed 19 Aug. 2025.</li>
+          <li>“<a href="https://www.nps.gov/subjects/nagpra/databases.htm" target="_blank"
+              rel="noreferrer">Databases</a>.” <em>Native American Graves Protection and Repatriation Act</em>, National
+            NAGPRA Program, National Park Service, U.S. Department of the Interior, updated 3 June 2024. Web. Accessed
+            20 Aug. 2025.</li>
+          <li>“<a href="https://www.nps.gov/subjects/nagpra/glossary.htm" target="_blank"
+              rel="noreferrer">Glossary</a>.” <em>Native American Graves Protection and Repatriation Act</em>, National
+            NAGPRA Program, National Park Service, U.S. Department of the Interior, updated 12 Jan. 2024. Web. Accessed
+            19 Aug. 2025.</li>
+          <li>“Native American Graves Protection and Repatriation Act Systematic Processes for Disposition or
+            Repatriation of Native American Human Remains, Funerary Objects, Sacred Objects, and Objects of Cultural
+            Patrimony.” <em><a
+                href="https://www.federalregister.gov/documents/2023/12/13/2023-27040/native-american-graves-protection-and-repatriation-act-systematic-processes-for-disposition-or"
+                target="_blank" rel="noreferrer">Federal Register</a></em>, vol. 88, no. 238, 13 Dec. 2023, pp.
+            86452–86540. Web. Accessed 18 Aug. 2025.</li>
+          <li>“Part 10 — Native American Graves Protection and Repatriation Regulations.” <em><a
+                href="https://www.ecfr.gov/current/title-43/subtitle-A/part-10" target="_blank"
+                rel="noreferrer">e-CFR</a></em>, Title 43, Subtitle A, Part 10, updated as of 15 Aug. 2025, Office of
+            the Secretary of the Interior, U.S. Government Publishing Office. Web. Accessed 19 Aug. 2025.</li>
+          <li>“<a href="https://www.nps.gov/subjects/nagpra/repatriation-of-human-remains.htm" target="_blank"
+              rel="noreferrer">Repatriation of Human Remains</a>.” <em>Native American Graves Protection and
+              Repatriation Act</em>, National NAGPRA Program, National Park Service, U.S. Department of the Interior,
+            updated 2025. Web. Accessed 20 Aug. 2025.</li>
+          <li>“Repatriation Policy.” <em>National Museum of the American Indian Repatriation Policy</em>, adopted 19
+            June 2020; revised June 2022, National Museum of the American Indian, Smithsonian Institution. PDF. Accessed
+            19 Aug. 2025.</li>
+        </ol>
+      </div>
       </div>
     </section>
 
